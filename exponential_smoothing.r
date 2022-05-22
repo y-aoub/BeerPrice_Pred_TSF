@@ -4,7 +4,7 @@ serie = ts(data = serie, start = c(1974,1), frequency = 12) # Transformation en 
 show(decompose(serie))
 serie.des = decompose(serie)$trend # de-seasonalized serie
 show(serie.des)
-# Affichage série et série désaisonnalis?e
+# Plot of the original serie and the de-seasonalized serie
 plot(serie,main="Beer production in Austarila between Jan 1974 and Dec 1980",ylab="Bi?re",xlab="")
 points(serie.des,type="l",col="red")
 
